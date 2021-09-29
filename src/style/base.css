@@ -1,0 +1,107 @@
+:root {
+    --fire: #ee6352ff;
+    --cyan: #08b2e3ff;
+    --magnolia: #efe9f4ff;
+    --forest: #57a773ff;
+    --independence: #484d6dff;
+
+    --primary: white;
+    --secondary: black;
+
+    --text-primary: black;
+    --text-secondary: white;
+
+    --hover: rgba(0, 0, 0, 0.075);
+    --hover-1: rgba(0, 0, 0, 0.15);
+    --hover-2: rgba(0, 0, 0, 0.25);
+
+    --accent-0: white;
+    --accent-1: #fafafa;
+    --accent-2: #eaeaea;
+    --accent-3: #999999;
+    --accent-4: #888888;
+    --accent-5: #666666;
+    --accent-6: #444444;
+    --accent-7: #333333;
+    --accent-8: #111111;
+    --accent-9: black;
+}
+
+[data-theme='dark'] {
+    --primary: black;
+    --secondary: white;
+
+    --hover: rgba(255, 255, 255, 0.075);
+    --hover-1: rgba(255, 255, 255, 0.15);
+    --hover-2: rgba(255, 255, 255, 0.25);
+
+    --text-primary: white;
+    --text-secondary: black;
+
+    --accent-9: white;
+    --accent-8: #fafafa;
+    --accent-7: #eaeaea;
+    --accent-6: #999999;
+    --accent-5: #888888;
+    --accent-4: #666666;
+    --accent-3: #444444;
+    --accent-2: #333333;
+    --accent-1: #111111;
+    --accent-0: black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary);
+    color: var(--text-primary);
+    overscroll-behavior-x: none;
+    position: relative;
+    margin: 0;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px var(--primary);
+    border: solid 4px transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px var(--accent-5);
+    border-radius: 1em;
+    border: solid 4px transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 10px 10px var(--accent-6);
+}
