@@ -1,8 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: [ '@babel/polyfill', './src/index.js' ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -41,6 +42,12 @@ const config = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      filename: 'index.html',
+    }),
+  ],
   devServer: {
     'static': {
       directory: './dist'

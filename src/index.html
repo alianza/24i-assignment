@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>24i Front-End Assignment - Google Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="app" class="sm:p-4">
+            <header class="mb-8 p-4">
+                <img id="logo" class="mx-auto mb-2" alt="Google logo" src="">
+                <div class="mx-auto w-full flex md:w-1/2">
+                    <label for="searchField" class="sr-only">Search query</label>
+                    <input value="24i media" id="searchField" class="shadow appearance-none border rounded flex-grow w-full py-2 px-3 text-gray-700 leading-tight mr-1 focus:outline-none focus:shadow-outline-normal" type="text" placeholder="What are you looking for? 👀">
+                    <button id="searchButton" class="flex-shrink-0 bg-forest hover:bg-cyan text-sm text-white py-1 px-2 rounded focus:shadow-outline-normal" type="button">Search 🔎</button>
+                </div>
+            </header>
+
+            <main id="results" class="flex p-4 justify-around flex-col-reverse gap-4 max-w-screen-xl mx-auto sm:flex-row">
+
+                <div id="imageResultsContainer" class="sm:w-1/2">
+                    <div class="mb-2">
+                        <h2 class="sm:inline-block">Image results</h2>
+                        <span id="numberOfImageResults" class="text-xs whitespace-nowrap"></span>
+                        <span id="imageResultsTime" class="text-xs whitespace-nowrap"></span>
+                    </div>
+
+
+                    <div id="imageResults" class="flex gap-2 flex-wrap content-start"></div>
+
+                    <button id="loadMoreImages" data-index="" data-query="" class="bg-fire hover:bg-independence text-sm text-white py-1 px-2 mt-2 rounded focus:shadow-outline-independence">Load more...</button>
+                </div>
+
+                <div id="webResultsContainer" class="sm:w-1/2">
+                    <div class="mb-2">
+                        <h2 class="sm:inline-block">Web results</h2>
+                        <span id="numberOfWebResults" class="text-xs whitespace-nowrap"></span>
+                        <span id="webResultsTime" class="text-xs whitespace-nowrap"></span>
+                    </div>
+
+
+                    <div id="webResults" class="flex gap-2 flex-wrap"></div>
+
+                    <button id="loadMoreWeb" data-index="" data-query="" class="bg-fire hover:bg-independence text-sm text-white py-1 px-2 mt-2 rounded focus:shadow-outline-independence">Load more...</button>
+                </div>
+            </main>
+        </div>
+
+        <div id="loader">
+            <div></div>
+        </div>
+    </body>
+</html>

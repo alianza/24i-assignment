@@ -1,5 +1,6 @@
 import "./style/styles.css";
 import "./style/styles.scss";
+import "./style/base.css";
 
 import GoogleSearchService from "./services/googleSearchService";
 import { hideLoader, showLoader } from "./lib/loader";
@@ -16,7 +17,6 @@ const webResults = document.getElementById('webResults');
 const logo = document.getElementById('logo');
 const loadMoreImagesButton = document.getElementById('loadMoreImages');
 const loadMoreWebButton = document.getElementById('loadMoreWeb');
-
 const numberOfWebResults = document.getElementById('numberOfWebResults');
 const webResultsTime = document.getElementById('webResultsTime');
 const numberOfImageResults = document.getElementById('numberOfImageResults');
@@ -24,20 +24,25 @@ const imageResultsTime = document.getElementById('imageResultsTime');
 
 // Init
 
-logo.src = logoImg;
-
-searchButton.addEventListener('click', performSearch);
-
-loadMoreWebButton.addEventListener('click', loadNextWebResults);
-loadMoreImagesButton.addEventListener('click', loadNextImageResults);
-
-searchField.addEventListener('keyup', e => {
-    if (e.key === 'Enter' || e.keyCode === 13) { performSearch(); }
-});
-
-performSearch();
+init();
 
 // Methods
+
+function init() {
+    logo.src = logoImg;
+
+    searchButton.addEventListener('click', performSearch);
+
+    loadMoreWebButton.addEventListener('click', loadNextWebResults);
+    loadMoreImagesButton.addEventListener('click', loadNextImageResults);
+
+    searchField.addEventListener('keyup', e => {
+        if (e.key === 'Enter' || e.keyCode === 13) { performSearch(); }
+    });
+
+    performSearch();
+}
+
 
 function performSearch() {
     showLoader();
