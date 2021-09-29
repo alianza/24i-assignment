@@ -1,0 +1,246 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - car",
+                "totalResults": "22500000000",
+                "searchTerms": "car",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "012955710262491479170:0tecfhwsbxc",
+                "searchType": "image"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - car",
+                "totalResults": "22500000000",
+                "searchTerms": "car",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "012955710262491479170:0tecfhwsbxc",
+                "searchType": "image"
+            }
+        ]
+    },
+    "context": {
+        "title": "Google search (24i)"
+    },
+    "searchInformation": {
+        "searchTime": 0.375691,
+        "formattedSearchTime": "0.38",
+        "totalResults": "22500000000",
+        "formattedTotalResults": "22,500,000,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Here Are The Coolest New Cars For 2020",
+            "htmlTitle": "Here Are The Coolest New <b>Cars</b> For 2020",
+            "link": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F2020-Chevrolet-Corvette-Stingray%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349",
+            "displayLink": "www.forbes.com",
+            "snippet": "Here Are The Coolest New Cars For 2020",
+            "htmlSnippet": "Here Are The Coolest New <b>Cars</b> For 2020",
+            "mime": "image/",
+            "fileFormat": "image/",
+            "image": {
+                "contextLink": "https://www.forbes.com/sites/jimgorzelany/2019/07/23/here-are-the-coolest-new-cars-for-2020/",
+                "height": 540,
+                "width": 960,
+                "byteSize": 55471,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4AcpcqD_7MAmrKjlmkBK1YPhFR1XAEUP80eysw6FNm69Z1PFo9R7liM&s",
+                "thumbnailHeight": 83,
+                "thumbnailWidth": 148
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "New Cars from Ford® | Find the Best Car for You | Ford.com",
+            "htmlTitle": "New <b>Cars</b> from Ford® | Find the Best <b>Car</b> for You | Ford.com",
+            "link": "https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2021/collections/dm/21_FRD_MST_wdmp_200510_01612.tif?croppathe=1_3x2&wid=900",
+            "displayLink": "www.ford.com",
+            "snippet": "New Cars from Ford® | Find the Best Car for You | Ford.com",
+            "htmlSnippet": "New <b>Cars</b> from Ford® | Find the Best <b>Car</b> for You | Ford.com",
+            "mime": "image/tiff",
+            "fileFormat": "image/tiff",
+            "image": {
+                "contextLink": "https://www.ford.com/new-cars/",
+                "height": 600,
+                "width": 900,
+                "byteSize": 68276,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-w7qUg6KaiTQb8EmS7fxHBAkALldnBpUGMmVjrM6PV2LWOuT9u6X_8qg&s",
+                "thumbnailHeight": 97,
+                "thumbnailWidth": 146
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Why the Paint Job on Your Car Is Crucial to Its Resale Value - The ...",
+            "htmlTitle": "Why the Paint Job on Your <b>Car</b> Is Crucial to Its Resale Value - The ...",
+            "link": "https://static01.nyt.com/images/2021/03/26/business/25wheels/00CARS-COMBO-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+            "displayLink": "www.nytimes.com",
+            "snippet": "Why the Paint Job on Your Car Is Crucial to Its Resale Value - The ...",
+            "htmlSnippet": "Why the Paint Job on Your <b>Car</b> Is Crucial to Its Resale Value - The ...",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.nytimes.com/2021/03/25/business/car-paint-job-resale-value.html",
+                "height": 400,
+                "width": 600,
+                "byteSize": 38871,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWrRbetEH9byL3ws2_n6Sh5myVHl-ZsPE_uGNqXLpf6PorsdWGh0lC_w&s",
+                "thumbnailHeight": 90,
+                "thumbnailWidth": 135
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Here Are The Coolest New Cars For 2020",
+            "htmlTitle": "Here Are The Coolest New <b>Cars</b> For 2020",
+            "link": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349",
+            "displayLink": "www.forbes.com",
+            "snippet": "Here Are The Coolest New Cars For 2020",
+            "htmlSnippet": "Here Are The Coolest New <b>Cars</b> For 2020",
+            "mime": "image/",
+            "fileFormat": "image/",
+            "image": {
+                "contextLink": "https://www.forbes.com/sites/jimgorzelany/2019/07/23/here-are-the-coolest-new-cars-for-2020/",
+                "height": 675,
+                "width": 1200,
+                "byteSize": 80338,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5g73poQ_z56mwPhBJKsiqlIibRV_5kdtrUjuOhNoWVzRSta5-clhjCw&s",
+                "thumbnailHeight": 84,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Why the Paint Job on Your Car Is Crucial to Its Resale Value - The ...",
+            "htmlTitle": "Why the Paint Job on Your <b>Car</b> Is Crucial to Its Resale Value - The ...",
+            "link": "https://static01.nyt.com/images/2021/03/26/business/25wheels/00CARS-COMBO-superJumbo.jpg",
+            "displayLink": "www.nytimes.com",
+            "snippet": "Why the Paint Job on Your Car Is Crucial to Its Resale Value - The ...",
+            "htmlSnippet": "Why the Paint Job on Your <b>Car</b> Is Crucial to Its Resale Value - The ...",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.nytimes.com/2021/03/25/business/car-paint-job-resale-value.html",
+                "height": 1365,
+                "width": 2048,
+                "byteSize": 348858,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPT_nQJYP3gzOXhT_pZV9cj-j4F1cdT8I9X-qmE0twsF0O8JD1m__xA&s",
+                "thumbnailHeight": 100,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "https://newscdn2.weigelbroadcasting.com/MobKL-1619...",
+            "htmlTitle": "https://newscdn2.weigelbroadcasting.com/MobKL-1619...",
+            "link": "https://newscdn2.weigelbroadcasting.com/MobKL-1619541648-194037-blog-1200P_AUTO%20SHOW_PKG_WDJT7WYZ_2.JPG",
+            "displayLink": "www.cbs58.com",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.cbs58.com/news/2021-greater-milwaukee-car-truck-show-set-for-state-fair-park-may-5-9",
+                "height": 495,
+                "width": 880,
+                "byteSize": 60174,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qGLr4eEOoC0Hk_Gqr9zUU8yr5__DzXcvEKRBm5ukCa1FHY9OdbKwg2Y&s",
+                "thumbnailHeight": 82,
+                "thumbnailWidth": 146
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Electric Cars, Solar & Clean Energy | Tesla",
+            "htmlTitle": "Electric <b>Cars</b>, Solar &amp; Clean Energy | Tesla",
+            "link": "https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop",
+            "displayLink": "www.tesla.com",
+            "snippet": "Electric Cars, Solar & Clean Energy | Tesla",
+            "htmlSnippet": "Electric <b>Cars</b>, Solar &amp; Clean Energy | Tesla",
+            "mime": "image/",
+            "fileFormat": "image/",
+            "image": {
+                "contextLink": "https://www.tesla.com/",
+                "height": 1798,
+                "width": 2158,
+                "byteSize": 352725,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlj6W7yGNG5sbKStChVYgsL2a31VlnKyiqYFUPi07KAgsUs4j7IAdrOcU&s",
+                "thumbnailHeight": 125,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com",
+            "htmlTitle": "New <b>Cars</b>, Used <b>Cars</b>, <b>Car</b> Dealers, Prices &amp; Reviews | <b>Cars</b>.com",
+            "link": "https://www.cars.com/images/trending_content/ford-mustang-mach-e-2021-02-angle--dynamic--exterior--front--red--wheel-oem-65f5ec1a292580937df4908c2c988adf.jpg?vsn=d",
+            "displayLink": "www.cars.com",
+            "snippet": "New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com",
+            "htmlSnippet": "New <b>Cars</b>, Used <b>Cars</b>, <b>Car</b> Dealers, Prices &amp; Reviews | <b>Cars</b>.com",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.cars.com/",
+                "height": 800,
+                "width": 1200,
+                "byteSize": 60868,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-q42zxhXDnFFH65ngrgg3bMCfIYS1oQoVRM78XWoqEh9cCqzH_D5wIA&s",
+                "thumbnailHeight": 100,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Indy 500: IMS unveils pace car, driver",
+            "htmlTitle": "Indy 500: IMS unveils pace <b>car</b>, driver",
+            "link": "https://www.gannett-cdn.com/presto/2020/08/12/PIND/ba206003-83fe-4037-966e-0831d72d8251-PaceCar.JPG",
+            "displayLink": "www.indystar.com",
+            "snippet": "Indy 500: IMS unveils pace car, driver",
+            "htmlSnippet": "Indy 500: IMS unveils pace <b>car</b>, driver",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.indystar.com/story/sports/motor/2020/08/12/indy-500-ims-unveils-pace-car-driver-2020-corvette-stingray-mark-reuss/3353049001/",
+                "height": 852,
+                "width": 1280,
+                "byteSize": 92540,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Clsi1skJVXQN8T7nh-rVs_nAX6Y4QEwmVXAJ82_P156rUp2qcLTKgMQ&s",
+                "thumbnailHeight": 100,
+                "thumbnailWidth": 150
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "9 Best Small Cars for 2021 | Kelley Blue Book",
+            "htmlTitle": "9 Best Small <b>Cars</b> for 2021 | Kelley Blue Book",
+            "link": "https://www.kbb.com/wp-content/uploads/2020/11/2021-hyundai-elantra-silver-front-3qtr-16x9-1.jpg",
+            "displayLink": "www.kbb.com",
+            "snippet": "9 Best Small Cars for 2021 | Kelley Blue Book",
+            "htmlSnippet": "9 Best Small <b>Cars</b> for 2021 | Kelley Blue Book",
+            "mime": "image/jpeg",
+            "fileFormat": "image/jpeg",
+            "image": {
+                "contextLink": "https://www.kbb.com/best-cars/best-small-cars/",
+                "height": 900,
+                "width": 1600,
+                "byteSize": 338050,
+                "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzoFuXzeOgK_es8HpESdg_PzmB0kKr3H9AWfKXQ-ypshS59q8TYVz9P3Q&s",
+                "thumbnailHeight": 84,
+                "thumbnailWidth": 150
+            }
+        }
+    ]
+}

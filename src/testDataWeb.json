@@ -1,0 +1,395 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - car",
+                "totalResults": "7810000000",
+                "searchTerms": "car",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "012955710262491479170:0tecfhwsbxc"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - car",
+                "totalResults": "7810000000",
+                "searchTerms": "car",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "012955710262491479170:0tecfhwsbxc"
+            }
+        ]
+    },
+    "context": {
+        "title": "Google search (24i)"
+    },
+    "searchInformation": {
+        "searchTime": 0.283623,
+        "formattedSearchTime": "0.28",
+        "totalResults": "7810000000",
+        "formattedTotalResults": "7,810,000,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "CALIFORNIA ASSOCIATION OF REALTORS® - www.car.org",
+            "htmlTitle": "<b>CALIFORNIA ASSOCIATION OF REALTORS</b>® - www.<b>car</b>.org",
+            "link": "https://www.car.org/",
+            "displayLink": "www.car.org",
+            "snippet": "A real estate trade association to develop and promote programs/services that enhance a member's ability to conduct business with integrity and competency.",
+            "htmlSnippet": "A real estate trade association to develop and promote programs/services that enhance a member&#39;s ability to conduct business with integrity and competency.",
+            "cacheId": "lgcOR3kf4YwJ",
+            "formattedUrl": "https://www.car.org/",
+            "htmlFormattedUrl": "https://www.<b>car</b>.org/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DcqDqYbXK6QFXQCV7yXRudHbcBYlyuT8yc306btj8P2cCQEP-SK_X4Y",
+                        "width": "321",
+                        "height": "157"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "/-/media/CAR/Images/Logo/CAR_FB_logo.gif",
+                        "twitter:card": "summary",
+                        "twitter:title": "CALIFORNIA ASSOCIATION OF REALTORS&#174; - www.car.org",
+                        "twitter:url": "http://www.car.org/",
+                        "og:title": "CALIFORNIA ASSOCIATION OF REALTORS&#174; - www.car.org",
+                        "og:description": "A real estate trade association to develop and promote programs/services that enhance a member's ability to conduct business with integrity and competency. Find zipForm&reg;, legal articles and advice, CE training, marketing materials, and more.",
+                        "twitter:image": "/-/media/CAR/Images/Logo/CAR_FB_logo.gif",
+                        "referrer": "always",
+                        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=yes",
+                        "apple-mobile-web-app-capable": "yes",
+                        "twitter:description": "A real estate trade association to develop and promote programs/services that enhance a member's ability to conduct business with integrity and competency. Find zipForm&reg;, legal articles and advice, CE training, marketing materials, and more.",
+                        "fb:page_id": "8351618289",
+                        "og:url": "http://www.car.org/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.car.org/-/media/CAR/Images/System/Feature/Home/Header/grey-bkgd.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com",
+            "htmlTitle": "New <b>Cars</b>, Used <b>Cars</b>, <b>Car</b> Dealers, Prices &amp; Reviews | <b>Cars</b>.com",
+            "link": "https://www.cars.com/",
+            "displayLink": "www.cars.com",
+            "snippet": "Shop new & used cars, research & compare models, find local dealers/sellers,calculate payments, value your car, sell/trade in your car & more at Cars.com.",
+            "htmlSnippet": "Shop new &amp; used <b>cars</b>, research &amp; compare models, find local dealers/sellers,calculate payments, value your <b>car</b>, sell/trade in your <b>car</b> &amp; more at <b>Cars</b>.com.",
+            "cacheId": "dHqrANYaU_oJ",
+            "formattedUrl": "https://www.cars.com/",
+            "htmlFormattedUrl": "https://www.<b>cars</b>.com/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEbadFN99ff868CSU2FLy4_4S63oTtWPu8YpiDMQCMRKtCEn0h0rsx0TI",
+                        "width": "310",
+                        "height": "163"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://graphics.cars.com/images/core/logo.png",
+                        "apple-itunes-app": "app-id=353263352",
+                        "og:type": "website",
+                        "twitter:card": "summary_large_image",
+                        "twitter:title": "New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com",
+                        "og:site_name": "Cars.com",
+                        "og:title": "New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com",
+                        "og:description": "Shop new & used cars, research & compare models, find local dealers/sellers,calculate payments, value your car, sell/trade in your car & more at Cars.com.",
+                        "twitter:image": "https://graphics.cars.com/images/core/logo.png",
+                        "fb:app_id": "290349283473",
+                        "twitter:site": "@carsdotcom",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "Shop new & used cars, research & compare models, find local dealers/sellers,calculate payments, value your car, sell/trade in your car & more at Cars.com.",
+                        "og:url": "https://www.cars.com/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://graphics.cars.com/images/core/logo.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Shop the nation's largest used car inventory Then buy online or at a ...",
+            "htmlTitle": "Shop the nation&#39;s largest used <b>car</b> inventory Then buy online or at a ...",
+            "link": "https://www.carmax.com/cars",
+            "displayLink": "www.carmax.com",
+            "snippet": "Search for new and used cars at carmax.com. Use our car search or research makes and models with customer reviews, expert reviews, and more.",
+            "htmlSnippet": "Search for new and used <b>cars</b> at carmax.com. Use our <b>car</b> search or research makes and models with customer reviews, expert reviews, and more.",
+            "cacheId": "BCMuSnCRjxYJ",
+            "formattedUrl": "https://www.carmax.com/cars",
+            "htmlFormattedUrl": "https://www.<b>car</b>max.com/<b>cars</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgHWZT5LdsEaWY1wiEUfaGls5U5xTG46CYNf4lR2_bcVUxlGp0jnrp-UB5",
+                        "width": "303",
+                        "height": "166"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1.0"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.carmax.com/cars/images/type-icons/crossovers.svg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Autotrader: Used and New Car Sales, Review",
+            "htmlTitle": "Autotrader: Used and New <b>Car</b> Sales, Review",
+            "link": "https://www.autotrader.com/",
+            "displayLink": "www.autotrader.com",
+            "snippet": "Find used cars and new cars for sale at Autotrader. With millions of cars, finding your next new car or used car and the car reviews and information you're ...",
+            "htmlSnippet": "Find used <b>cars</b> and new <b>cars</b> for sale at Autotrader. With millions of <b>cars</b>, finding your next new <b>car</b> or used <b>car</b> and the <b>car</b> reviews and information you&#39;re&nbsp;...",
+            "formattedUrl": "https://www.autotrader.com/",
+            "htmlFormattedUrl": "https://www.autotrader.com/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRupxgdAXQjHm941LUsLuemtKvsYyCDhYgL9t_HbvN0kdQNb-YAk0mABO8",
+                        "width": "246",
+                        "height": "205"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "//content.autotrader.com/content/dam/autotrader/collections/collections-og-image.png",
+                        "og:type": "website",
+                        "og:site_name": "Autotrader",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "og:title": "Used and New Car Sales, Review - Autotrader",
+                        "og:url": "https://www.autotrader.com",
+                        "og:description": "Find used cars and new cars for sale at Autotrader. With millions of cars, finding your next new car or used car and the car reviews and information you're looking for is easy at Autotrader."
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.autotrader.com/content/dam/autotrader/integrated_ads/_non_oem/_ATC_nonSponsored/atc_dhs_small_12.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "TrueCar | New & Used Cars for Sale | Car Pricing & Reviews",
+            "htmlTitle": "TrueCar | New &amp; Used <b>Cars</b> for Sale | <b>Car</b> Pricing &amp; Reviews",
+            "link": "https://www.truecar.com/",
+            "displayLink": "www.truecar.com",
+            "snippet": "Shop for new and used cars and trucks. Read real owner reviews, get a discounted TruePrice from a Certified Dealer and save an average of $3106 off MSRP ...",
+            "htmlSnippet": "Shop for new and used <b>cars</b> and trucks. Read real owner reviews, get a discounted TruePrice from a Certified Dealer and save an average of $3106 off MSRP&nbsp;...",
+            "cacheId": "Q4062EY6EYYJ",
+            "formattedUrl": "https://www.truecar.com/",
+            "htmlFormattedUrl": "https://www.true<b>car</b>.com/",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Ford® - New Hybrid & Electric Vehicles, SUVs, Crossovers, Trucks ...",
+            "htmlTitle": "Ford® - New Hybrid &amp; Electric Vehicles, SUVs, Crossovers, Trucks ...",
+            "link": "https://www.ford.com/",
+            "displayLink": "www.ford.com",
+            "snippet": "Ford® is Built for America. Discover the latest lineup in new Ford vehicles! Explore hybrid & electric vehicle options, see photos, build & price, ...",
+            "htmlSnippet": "Ford® is Built for America. Discover the latest lineup in new Ford vehicles! Explore hybrid &amp; electric vehicle options, see photos, build &amp; price,&nbsp;...",
+            "cacheId": "P2KiPSYW-3AJ",
+            "formattedUrl": "https://www.ford.com/",
+            "htmlFormattedUrl": "https://www.ford.com/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8PeGnQYLN4GV4jWsdvEBHMl_f4xorht5rXOnEMqFKkv5XwnHnuWM74MM",
+                        "width": "238",
+                        "height": "212"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:type": "website",
+                        "fb:app_id": "22166130048",
+                        "twitter:title": "Ford® - New Hybrid & Electric Vehicles, SUVs, Crossovers, Trucks, Vans & Cars",
+                        "og:site_name": "Ford Motor Company",
+                        "twitter:site": "@Ford",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "Ford® is Built for America. Discover the latest lineup in new Ford vehicles! Explore hybrid & electric vehicle options, see photos, build & price, search inventory, view pricing & incentives & see the latest technology & news happening at Ford.",
+                        "og:title": "Ford® - New Hybrid & Electric Vehicles, SUVs, Crossovers, Trucks, Vans & Cars",
+                        "og:url": "https://www.ford.com/",
+                        "og:description": "Ford® is Built for America. Discover the latest lineup in new Ford vehicles! Explore hybrid & electric vehicle options, see photos, build & price, search inventory, view pricing & incentives & see the latest technology & news happening at Ford.",
+                        "twitter:creator": "@Ford"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/legacy/marketing/brand-gallery/21_FRD_BFA_WHAF_Sm_v2.jpg/_jcr_content/renditions/cq5dam.web.768.768.jpeg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Waymo – Waymo",
+            "htmlTitle": "Waymo – Waymo",
+            "link": "https://waymo.com/",
+            "displayLink": "waymo.com",
+            "snippet": "Waymo—formerly the Google self-driving car project—stands for a new way forward in mobility. Our mission is to make it safe and easy for people and things ...",
+            "htmlSnippet": "Waymo—formerly the Google self-driving <b>car</b> project—stands for a new way forward in mobility. Our mission is to make it safe and easy for people and things&nbsp;...",
+            "cacheId": "jH6OCbvTOPQJ",
+            "formattedUrl": "https://waymo.com/",
+            "htmlFormattedUrl": "https://waymo.com/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDe3q_ecCo3327WH9qZ7L8ws21NE7bS3jFwMQ03gCBs4uCnT6WVePFQPA",
+                        "width": "310",
+                        "height": "163"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "https://waymo.com/v2/static/images/waymo_banner.jpg",
+                        "og:type": "website",
+                        "twitter:card": "summary_large_image",
+                        "twitter:title": "Waymo",
+                        "og:site_name": "Waymo",
+                        "og:title": "Waymo",
+                        "og:description": "Waymo—formerly the Google self-driving car project—stands for a new way forward in mobility. Our mission is to make it safe and easy for people and things to move around.",
+                        "twitter:creator": "@Waymo",
+                        "og:image:secure_url": "https://waymo.com/v2/static/images/waymo_banner.jpg",
+                        "twitter:image": "https://waymo.com/v2/static/images/waymo_banner.jpg",
+                        "referrer": "no-referrer",
+                        "twitter:site": "@Waymo",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "Waymo—formerly the Google self-driving car project—stands for a new way forward in mobility. Our mission is to make it safe and easy for people and things to move around.",
+                        "og:locale": "en",
+                        "og:url": "https://waymo.com/"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://waymo.com/v2/static/images/waymo_banner.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Used Cars for Sale | with Free CARFAX",
+            "htmlTitle": "Used <b>Cars</b> for Sale | with Free CARFAX",
+            "link": "https://www.carfax.com/cars-for-sale",
+            "displayLink": "www.carfax.com",
+            "snippet": "A FREE CARFAX report comes with every used car and truck for sale on Carfax.com. Start your search for 1-owner and accident-free cars to get a great deal.",
+            "htmlSnippet": "A FREE CARFAX report comes with every used <b>car</b> and truck for sale on Carfax.com. Start your search for 1-owner and accident-free <b>cars</b> to get a great deal.",
+            "cacheId": "FGj5YZBs4xgJ",
+            "formattedUrl": "https://www.carfax.com/cars-for-sale",
+            "htmlFormattedUrl": "https://www.<b>car</b>fax.com/<b>cars</b>-for-sale",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr9ofJgKcvZ8yPgGfLYVaaORyuqUGzKFWD5KG5xI9lAzOIMxDJAyLnw98",
+                        "width": "225",
+                        "height": "225"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:image": "http://img.vast.com/t/560x480/7316841802866978522_1",
+                        "theme-color": "#3777bc",
+                        "og:type": "website",
+                        "twitter:card": "summary",
+                        "twitter:title": "Used Cars for Sale – CARFAX",
+                        "og:title": "Used Cars for Sale | with Free CARFAX",
+                        "og:description": "--> Insert Description Here <--",
+                        "twitter:image": "/uclassets/images/ucl-link-preview.png",
+                        "referrer": "origin",
+                        "twitter:site": "@CARFAXinc",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "twitter:description": "Start your search with CARFAX Used Car Listings. Every car comes with a FREE CARFAX Report!",
+                        "og:url": "https://www.carfax.com/cars-for-sale",
+                        "google-play-app": "app-id=com.carfax.consumer"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://static.carfax.com/uclassets/images/ucl-link-preview.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Car Search : Delta Air Lines",
+            "htmlTitle": "<b>Car</b> Search : Delta Air Lines",
+            "link": "https://www.delta.com/merch/searchCarAction.action",
+            "displayLink": "www.delta.com",
+            "snippet": "Drive away with more miles. Earn 500 miles with each Hertz® car you rent at delta.com and save on base rates, excluding taxes ...",
+            "htmlSnippet": "Drive away with more miles. Earn 500 miles with each Hertz<sup>®</sup> <b>car</b> you rent at delta.com and save on base rates, excluding taxes&nbsp;...",
+            "cacheId": "UsdQWUtioF8J",
+            "formattedUrl": "https://www.delta.com/merch/searchCarAction.action",
+            "htmlFormattedUrl": "https://www.delta.com/merch/search<b>Car</b>Action.action",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQnTz9CKI0TMP8o4_AxBfyrSp3ciFW1BB6u9mmyKZ94pCFaKNRIXEXik",
+                        "width": "342",
+                        "height": "147"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://content.delta.com/content/dam/delta-applications/merch/hero_stub/cars-woman-summer-696.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Google.com/cars",
+            "htmlTitle": "Google.com/<b>cars</b>",
+            "link": "https://www.google.com/cars/",
+            "displayLink": "www.google.com",
+            "snippet": "Thank you for visiting Google.com/cars. The Google San Francisco Bay Area car search beta program has been discontinued as we focus on building the next ...",
+            "htmlSnippet": "Thank you for visiting Google.com/<b>cars</b>. The Google San Francisco Bay Area <b>car</b> search beta program has been discontinued as we focus on building the next&nbsp;...",
+            "cacheId": "lCvPnLoDD5EJ",
+            "formattedUrl": "https://www.google.com/cars/",
+            "htmlFormattedUrl": "https://www.google.com/<b>cars</b>/",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "viewport": "initial-scale=1, minimum-scale=1, width=device-width"
+                    }
+                ]
+            }
+        }
+    ]
+}
