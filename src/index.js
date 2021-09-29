@@ -1,11 +1,11 @@
 import "./style/styles.css";
 import "./style/styles.scss";
 
-import GoogleSearchService from "./googleSearchService";
-import { hideLoader, showLoader } from "./loader";
+import GoogleSearchService from "./services/googleSearchService";
+import { hideLoader, showLoader } from "./lib/loader";
 
 import logoImg from "./assets/images/google.svg";
-import { scrollIntoView, scrollToBottom, scrollToTop } from "./scroll";
+import { scrollIntoView } from "./lib/scroll";
 
 // Elements
 
