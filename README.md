@@ -1,6 +1,6 @@
 # 24i-assignment
 
-Empty project.
+Application for the 24i Front-end javascript test assignment. A custom Google search page with both image and web results on either side of the page (on desktop) according to the test description: [24i Front-End JavaScript test instructions](https://drive.google.com/file/d/1-0ww8cenojvekeur44P7nQ8PMWJ5O3IZ/view?usp=sharing)
 
 ## Building and running on localhost
 
@@ -13,7 +13,7 @@ npm install
 To run in hot module reloading mode:
 
 ```sh
-npm start
+npm run start
 ```
 
 To create a production build:
@@ -31,7 +31,7 @@ npm run build-dev
 ## Running
 
 ```sh
-node dist/bundle.js
+npm run serve
 ```
 
 ## Testing
@@ -39,15 +39,17 @@ node dist/bundle.js
 To run unit tests:
 
 ```sh
-npm test
+npm run jest:test
 ```
 
-To run cypress:
+To open cypress suite:
 
 ```sh
-npm cypress:open
+npm run cypress:open
 ```
 
-## Credits
+To run cypress test:
 
-Made with [createapp.dev](https://createapp.dev/)
+```sh
+npm run cypress:test
+```
