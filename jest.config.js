@@ -17,6 +17,7 @@ const config = {
     "json",
     "node"
   ],
+  testPathIgnorePatterns: ['cypress']
 };
 
 module.exports = config;
