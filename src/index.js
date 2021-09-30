@@ -6,7 +6,7 @@ import GoogleSearchService from "./services/googleSearchService";
 import { hideLoader, showLoader } from "./lib/loader";
 
 import logoImg from "./assets/images/google.svg";
-import { scrollIntoView } from "./lib/scroll";
+import { scrollIntoView, scrollToTop } from "./lib/scroll";
 
 // Elements
 
@@ -21,6 +21,7 @@ const numberOfWebResults = document.getElementById('numberOfWebResults');
 const webResultsTime = document.getElementById('webResultsTime');
 const numberOfImageResults = document.getElementById('numberOfImageResults');
 const imageResultsTime = document.getElementById('imageResultsTime');
+const scrollToTopButton = document.getElementById('scrollToTopButton');
 
 // Init
 
@@ -39,6 +40,10 @@ function init() {
     searchField.addEventListener('keyup', e => {
         if (e.key === 'Enter' || e.keyCode === 13) { performSearch(); }
     });
+
+    document.body.addEventListener('click', clickOutSide);
+
+    window.onscroll = () => { scrollToTopButton.style.visibility = document.documentElement.scrollTop > 650 ? "visible" : "hidden" };
 
     performSearch();
 }
@@ -70,9 +75,6 @@ function loadNextImageResults(e) {
 
 function performWebSearch(query, fromIndex) {
     GoogleSearchService.doWebSearch(query, fromIndex).then(results => {
-        // console.log('web', results);
-
-        // console.log(results.items);
 
         loadMoreWebButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
 
@@ -82,8 +84,8 @@ function performWebSearch(query, fromIndex) {
         results.items.forEach((item, index, array) => {
             webResults.insertAdjacentHTML('beforeend',
                 `
-                    <div class="relative mb-2 last:mb-0">
-                        <a href="${item.link}" target="_blank" class="block">${item.htmlTitle || item.title}</a>
+                    <div class="webResult relative mb-2 bg-accent-1 p-4 rounded-md last:mb-0" onclick="highLightCurrentWebResult(this)">
+                        <a href="${item.link}" target="_blank" class="block no-underline hover:underline">${item.htmlTitle || item.title}</a>
                         <span class="block text-forest">${item.displayLink}</span>
                         <span>${item.htmlSnippet || item.snippet}</span>
                     </div>
@@ -95,9 +97,6 @@ function performWebSearch(query, fromIndex) {
 
 function performImageSearch(searchQuery, fromIndex) {
     GoogleSearchService.doImageSearch(searchQuery, fromIndex).then(results => {
-        // console.log('image', results);
-
-        // console.log(results.items);
 
         loadMoreImagesButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
 
@@ -107,9 +106,11 @@ function performImageSearch(searchQuery, fromIndex) {
         results.items.forEach((item, index, array) => {
             imageResults.insertAdjacentHTML('beforeend',
                 `
-                    <a href="${item.link}" target="_blank" class="relative" style="height: fit-content">
-                        <img class="w-full rounded" src="${item.image.thumbnailLink}" alt="${item.image.contextLink}">
-                        <div class="absolute bottom-0 left-0 leading-4 h-4 overflow-ellipsis whitespace-nowrap w-full overflow-hidden bg-black text-sm rounded-b text-primary">${item.htmlTitle || item.title}</div>
+                    <a href="${item.link}" target="_blank" class="imageResult relative pb-4 rounded ring-opacity-80 hover:ring-4 active:outline-none active:ring-2" style="height: fit-content">
+                        <img class="max-w-full rounded-t" src="${item.image.thumbnailLink}" alt="${item.image.displayLink}">
+                        <span title="${item.title}" onclick="event.preventDefault(); window.open('${item.image.contextLink}', '_blank')" 
+                        class="absolute left-0 leading-4 h-4 overflow-ellipsis whitespace-nowrap w-full overflow-hidden 
+                        bg-black text-sm text-primary indent-1 pr-1 hover:underline rounded-b">${item.htmlTitle || item.title}</span>
                     </a>
                     `);
             if (index === array.length - 1) { hideLoader(); if (fromIndex) { scrollIntoView(loadMoreImagesButton) } } // If: last item, If pagination is used
@@ -120,4 +121,36 @@ function performImageSearch(searchQuery, fromIndex) {
 function clearSearchResults() {
     imageResults.innerHTML = '';
     webResults.innerHTML = '';
+}
+
+function clickOutSide(e) {
+    const webResults = document.querySelectorAll("div.webResult.ring-2");
+    let targetElement = e.target; // clicked element
+
+    do {
+        for (let e of webResults) {
+            if (e === targetElement) {
+                return; // This is a click inside of any of the target elements.
+            }
+        }
+
+        targetElement = targetElement.parentNode;
+    } while (targetElement);
+
+    unHighlightWebResults(); // This is a click outside of any of the target elements.
+}
+
+function unHighlightWebResults() {
+    document.querySelectorAll('div.webResult').forEach(e => {
+        e.classList.remove('ring-2');
+    });
+}
+
+window.highLightCurrentWebResult = function(e) {
+    unHighlightWebResults();
+    e.classList.add('ring-2');
+}
+
+window.goToTop = function () {
+    scrollToTop();
 }
