@@ -1,5 +1,5 @@
-// import testDataImage from './testDataImage.json'
-// import testDataWeb from './testDataWeb.json'
+// import testDataImage from 'cypress/fixtures/testDataImage.json'
+// import testDataWeb from 'cypress/fixtures/testDataWeb.json'
 
 let apiKey = 'AIzaSyDLfvMG_HiopNqKzO5Pvgk5VD5737qPOXE';
 let searchEngineId = '21f08f22c3bb24f4d';
@@ -9,34 +9,35 @@ let paginationFragment = '&start=';
 const GoogleSearchService = {
     baseUrl: `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&q=`,
 
-    doLoad(query) { // Base method for doing http Get requests
-        if (!query.includes(this.baseUrl)) { query = this.baseUrl + query }
+    doLoad(url) { // Base method for doing http GET requests
+        if (!url.includes(this.baseUrl)) { url = this.baseUrl + url }
 
-        // console.log(query)
-        return fetch(query).then(response => {
+        // console.log(url);
+        return fetch(url).then(response => {
             if (response.status === 404) { return '' }
             if (response.status === 200) { return response.json() }})
             .then(data => {
                 // console.log(data)
-                return data}).catch(e => { console.log('Error', e) })
+                return data
+            }).catch(e => { console.log(`Error performing API call to ${url}`, e) })
 
-        // return Promise.resolve()
+        // return Promise.resolve();
     },
 
     doWebSearch(query, index) {
         const pagination = index ? `${paginationFragment}${index}` : '';
         return this.doLoad(query + pagination).then(jsonData => {
             return jsonData;
-            // return testDataWeb;
-        }).catch(e => { console.log('Error', e) })
+            // return testDataWeb; // Test implementation to save API calls
+        }).catch(e => { console.log('Error retrieving web results', e) })
     },
 
     doImageSearch(query, index) {
         const pagination = index ? `${paginationFragment}${index}` : '';
         return this.doLoad(`${query}&searchType=image${pagination}`).then(jsonData => {
             return jsonData;
-            // return testDataImage;
-        }).catch(e => { console.log('Error', e) })
+            // return testDataImage; // Test implementation to save API calls
+        }).catch(e => { console.log('Error retrieving image results', e) })
     }
 }
 
