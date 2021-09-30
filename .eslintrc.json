@@ -7,25 +7,36 @@
     "cypress/no-async-tests": "error",
     "cypress/no-pause": "error"
   },
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "rules": {
+        "jest/expect-expect": "off"
+      }
+    }
+  ],
   "env": {
     "es6": true,
     "browser": true,
     "node": true,
-    "cypress/globals": true
+    "cypress/globals": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "extends": [
+    "eslint:recommended",
     "plugin:cypress/recommended",
-    "eslint:recommended"
+    "plugin:jest/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
   "plugins": [
-    "cypress"
+    "cypress",
+    "jest"
   ]
 }
