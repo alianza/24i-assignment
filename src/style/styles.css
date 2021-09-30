@@ -20,3 +20,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+    .indent-1 {
+        text-indent: .25rem;
+    }
+}
