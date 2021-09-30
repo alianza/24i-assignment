@@ -1,12 +1,18 @@
+// Style
+
 import "./style/styles.css";
 import "./style/styles.scss";
 import "./style/base.css";
 
+// Modules
+
 import GoogleSearchService from "./services/googleSearchService";
 import { hideLoader, showLoader } from "./lib/loader";
+import { scrollIntoView, scrollToTop } from "./lib/scroll";
+
+// Assets
 
 import logoImg from "./assets/images/google.svg";
-import { scrollIntoView, scrollToTop } from "./lib/scroll";
 
 // Elements
 
@@ -29,7 +35,7 @@ init();
 
 // Methods
 
-function init() {
+function init() { // Initialisation method: Sets event listeners, image sources and performs initial search
     logo.src = logoImg;
 
     searchButton.addEventListener('click', performSearch);
@@ -49,7 +55,7 @@ function init() {
 }
 
 
-function performSearch() {
+function performSearch() { // Performs both image and web search
     showLoader();
     clearSearchResults();
 
@@ -61,19 +67,19 @@ function performSearch() {
     }
 }
 
-function loadNextWebResults(e) {
+function loadNextWebResults(e) { // Loads the next page of web results
     showLoader();
     const index = parseInt(e.target.dataset.index) + 1;
     performWebSearch(searchField.value, index);
 }
 
-function loadNextImageResults(e) {
+function loadNextImageResults(e) { // Loads the next page of image results
     showLoader();
     const index = parseInt(e.target.dataset.index) + 1;
     performImageSearch(searchField.value, index);
 }
 
-function performWebSearch(query, fromIndex) {
+function performWebSearch(query, fromIndex) { // Performs web search query
     GoogleSearchService.doWebSearch(query, fromIndex).then(results => {
 
         loadMoreWebButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
@@ -82,7 +88,7 @@ function performWebSearch(query, fromIndex) {
         webResultsTime.innerText = `Time: ${results.searchInformation.formattedSearchTime}s`
 
         results.items.forEach((item, index, array) => {
-            webResults.insertAdjacentHTML('beforeend',
+            webResults.insertAdjacentHTML('beforeend', // HTML fragment to append for every web result
                 `
                     <div class="webResult relative mb-2 bg-accent-1 p-4 rounded-md last:mb-0" onclick="highLightCurrentWebResult(this)">
                         <a href="${item.link}" target="_blank" class="block no-underline hover:underline">${item.htmlTitle || item.title}</a>
@@ -95,7 +101,7 @@ function performWebSearch(query, fromIndex) {
     });
 }
 
-function performImageSearch(searchQuery, fromIndex) {
+function performImageSearch(searchQuery, fromIndex) { // Performs image search query
     GoogleSearchService.doImageSearch(searchQuery, fromIndex).then(results => {
 
         loadMoreImagesButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
@@ -104,7 +110,7 @@ function performImageSearch(searchQuery, fromIndex) {
         imageResultsTime.innerText = `Time: ${results.searchInformation.formattedSearchTime}s`
 
         results.items.forEach((item, index, array) => {
-            imageResults.insertAdjacentHTML('beforeend',
+            imageResults.insertAdjacentHTML('beforeend', // HTML fragment to append for every image result
                 `
                     <a href="${item.link}" target="_blank" class="imageResult relative pb-4 rounded ring-opacity-80 hover:ring-4 active:outline-none active:ring-2" style="height: fit-content">
                         <img class="max-w-full rounded-t" src="${item.image.thumbnailLink}" alt="${item.image.displayLink}">
@@ -118,12 +124,12 @@ function performImageSearch(searchQuery, fromIndex) {
     });
 }
 
-function clearSearchResults() {
+function clearSearchResults() { // Clears all search results
     imageResults.innerHTML = '';
     webResults.innerHTML = '';
 }
 
-function clickOutSide(e) {
+function clickOutSide(e) { // Detects mouse click outside of supplied element
     const webResults = document.querySelectorAll("div.webResult.ring-2");
     let targetElement = e.target; // clicked element
 
@@ -137,20 +143,20 @@ function clickOutSide(e) {
         targetElement = targetElement.parentNode;
     } while (targetElement);
 
-    unHighlightWebResults(); // This is a click outside of any of the target elements.
+    unHighlightWebResults(); // This is a click outside of any of the target elements
 }
 
-function unHighlightWebResults() {
+function unHighlightWebResults() { // Removed highlighting from all web results
     document.querySelectorAll('div.webResult').forEach(e => {
         e.classList.remove('ring-2');
     });
 }
 
-window.highLightCurrentWebResult = function(e) {
+window.highLightCurrentWebResult = function(e) { // Highlights the current web result
     unHighlightWebResults();
     e.classList.add('ring-2');
 }
 
-window.goToTop = function () {
+window.goToTop = function () { // Scrolls to the top of the page
     scrollToTop();
 }

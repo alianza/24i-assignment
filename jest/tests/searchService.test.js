@@ -2,11 +2,10 @@ import GoogleSearchService from "../../src/services/googleSearchService";
 
 describe('The Google custom search service', () => {
 
+    const query = 'car';
+    const fromIndex = null;
 
-    test('googleSearchService web search', async () => {
-
-        const query = 'car';
-        const fromIndex = null;
+    test('googleSearchService web search', async () => { // Performs API call using search service and asserts response
 
         await GoogleSearchService.doWebSearch(query, fromIndex).then(results => {
 
@@ -29,10 +28,7 @@ describe('The Google custom search service', () => {
 
     });
 
-    test('googleSearchService image search', async () => {
-
-        const query = 'car';
-        const fromIndex = null;
+    test('googleSearchService image search', async () => { // Performs API call using search service and asserts response
 
         await GoogleSearchService.doImageSearch(query, fromIndex).then(results => {
 

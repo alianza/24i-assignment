@@ -1,12 +1,9 @@
 describe('The user interface', () => {
     beforeEach(() => {
-        cy.visit('/') // Uses baseUrl defined in cypress.json config file, run project locally with `build-prod`& `serve`
+        cy.visit('/') // Uses baseUrl defined in cypress.json config file, run project locally with npm run `build-prod` & `serve`
     });
 
-    it('Has scroll to top button', () => {
-        // Scrolls to bottom to make scrollToTop button appear, presses the button and asserts page scrolled up to top
-        console.log('Loaded base url');
-
+    it('Has scroll to top button', () => { // Scrolls to bottom to make scrollToTop button appear, presses the button and asserts page scrolled up to top
         cy.waitUntil(() => cy.get('#loader').should('be.hidden'));
 
         cy.scrollTo('bottom');

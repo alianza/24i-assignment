@@ -12,19 +12,15 @@ const GoogleSearchService = {
     doLoad(url) { // Base method for doing http GET requests
         if (!url.includes(this.baseUrl)) { url = this.baseUrl + url }
 
-        // console.log(url);
         return fetch(url).then(response => {
             if (response.status === 404) { return '' }
             if (response.status === 200) { return response.json() }})
             .then(data => {
-                // console.log(data)
-                return data
+                return data;
             }).catch(e => { console.log(`Error performing API call to ${url}`, e) })
-
-        // return Promise.resolve();
     },
 
-    doWebSearch(query, index) {
+    doWebSearch(query, index) { // Performs a search operation with web results
         const pagination = index ? `${paginationFragment}${index}` : '';
         return this.doLoad(query + pagination).then(jsonData => {
             return jsonData;
@@ -32,7 +28,7 @@ const GoogleSearchService = {
         }).catch(e => { console.log('Error retrieving web results', e) })
     },
 
-    doImageSearch(query, index) {
+    doImageSearch(query, index) { // Performs a search operation with image results
         const pagination = index ? `${paginationFragment}${index}` : '';
         return this.doLoad(`${query}&searchType=image${pagination}`).then(jsonData => {
             return jsonData;
