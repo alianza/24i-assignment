@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -44,13 +43,21 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      template: 'src/index.html',
       filename: 'index.html',
+      title: '24i Front-End Assignment - Google Search',
+      favicon: 'src/assets/favicon.ico',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        description: "Google search page for the 24i coding assignment!",
+        theme: "#08b2e3ff",
+      },
     }),
   ],
   devServer: {
+    watchFiles: ['src/**/*.html', 'src/**/*.js'],
     'static': {
-      directory: './dist'
+      directory: './dist',
     }
   }
 };
