@@ -14,7 +14,7 @@
     "serve": "serve dist",
     "test": "jest",
     "cypress:open": "cypress open",
-    "cypress:test": "cypress run"
+    "cypress:test": "cypress run --spec cypress/integration/tests/**/*"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
