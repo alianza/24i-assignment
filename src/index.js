@@ -70,9 +70,9 @@ function loadNextImageResults(e) {
 
 function performWebSearch(query, fromIndex) {
     GoogleSearchService.doWebSearch(query, fromIndex).then(results => {
-        console.log('web', results);
+        // console.log('web', results);
 
-        console.log(results.items);
+        // console.log(results.items);
 
         loadMoreWebButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
 
@@ -95,9 +95,9 @@ function performWebSearch(query, fromIndex) {
 
 function performImageSearch(searchQuery, fromIndex) {
     GoogleSearchService.doImageSearch(searchQuery, fromIndex).then(results => {
-        console.log('image', results);
+        // console.log('image', results);
 
-        console.log(results.items);
+        // console.log(results.items);
 
         loadMoreImagesButton.dataset.index = results.queries.request[0].count + results.queries.request[0].startIndex;
 

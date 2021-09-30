@@ -12,7 +12,7 @@ const GoogleSearchService = {
     doLoad(query) { // Base method for doing http Get requests
         if (!query.includes(this.baseUrl)) { query = this.baseUrl + query }
 
-        console.log(query)
+        // console.log(query)
         return fetch(query).then(response => {
             if (response.status === 404) { return '' }
             if (response.status === 200) { return response.json() }})
