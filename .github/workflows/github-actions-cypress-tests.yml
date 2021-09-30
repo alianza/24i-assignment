@@ -1,0 +1,18 @@
+name: End-to-end Cypress Tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress run  # Install NPM dependencies, cache them correctly
+        uses: cypress-io/github-action@v2 # and run all Cypress tests
+        with:
+          build: npm run build-prod
+          start: npm run serve
+          browser: chrome
+          spec: cypress/integration/tests/**/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN_GITHUB }} # pass GitHub token to allow accurately detecting a build vs a re-run build
