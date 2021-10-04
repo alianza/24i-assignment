@@ -2,6 +2,8 @@
 
 Application for the 24i Front-end javascript test assignment. A custom Google search page with both image and web results on either side of the page (on desktop) according to the test description: [24i Front-End JavaScript test instructions](https://drive.google.com/file/d/1-0ww8cenojvekeur44P7nQ8PMWJ5O3IZ/view?usp=sharing)
 
+Try at: https://vibrant-joliot-cc394e.netlify.app/
+
 ## Building and running on localhost
 
 First install dependencies:
